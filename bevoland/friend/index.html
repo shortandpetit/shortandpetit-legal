@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>A friend invited you to Bevoland</title>
+<meta name="description" content="A friend invited you to play Bevoland.">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+
+<header class="band">
+  <div class="band__inner">
+    <p class="band__eyebrow"><a href="/bevoland/">Bevoland</a></p>
+    <h1 id="who">A friend invited you to Bevoland</h1>
+    <p class="band__meta">Friend invitation</p>
+  </div>
+</header>
+
+<main>
+
+  <div class="lead">
+    <p>Bevoland is a free arena game for iPhone and Android, animals against
+    humans. Install it, then tap the invitation link again: the game opens and
+    invites your friend back, so you can compare your scores.</p>
+  </div>
+
+  <ul class="cards">
+    <li>
+      <a href="https://apps.apple.com/app/id0000000000" rel="noopener">
+        <span class="cards__title">App Store</span>
+        <span class="cards__desc">Bevoland for iPhone and iPad</span>
+      </a>
+    </li>
+    <li>
+      <a href="https://play.google.com/store/apps/details?id=com.shortandpetit.bevoland" rel="noopener">
+        <span class="cards__title">Google Play</span>
+        <span class="cards__desc">Bevoland for Android</span>
+      </a>
+    </li>
+  </ul>
+
+  <p>Already have the game? Open this link on your phone and it goes straight
+  to the game.</p>
+
+</main>
+
+<footer>
+  <nav>
+    <a href="/bevoland/">Bevoland</a>
+    <a href="/bevoland/privacy/">Privacy Policy</a>
+    <a href="/bevoland/terms/">Terms &amp; Conditions</a>
+  </nav>
+  <p>© 2026 Short &amp; Petit. All rights reserved.</p>
+</footer>
+
+<script>
+  // the inviting player's nickname, from the link (read here only; nothing is sent anywhere)
+  (function () {
+    var name = new URLSearchParams(window.location.search).get("n");
+    if (!name) return;
+    name = name.trim().slice(0, 50);
+    if (!name) return;
+    document.getElementById("who").textContent = name + " invited you to Bevoland";
+    document.title = name + " invited you to Bevoland";
+  })();
+</script>
+
+</body>
+</html>
