@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>A friend invited you to Bevoland Dev</title>
+<meta name="description" content="A friend invited you to play Bevoland Dev.">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+
+<header class="band">
+  <div class="band__inner">
+    <p class="band__eyebrow"><a href="/bevoland/">Bevoland Dev</a></p>
+    <h1 id="who">A friend invited you to Bevoland Dev</h1>
+    <p class="band__meta">Friend invitation</p>
+  </div>
+</header>
+
+<main>
+
+  <div class="lead">
+    <p>This invitation is for <strong>Bevoland Dev</strong>, the test version
+    of the game. Install Bevoland Dev from TestFlight on an iPhone, or from
+    Google Play's internal testing on Android, then tap the invitation link
+    again.</p>
+  </div>
+
+  <ul class="cards">
+    <li>
+      <a href="https://testflight.apple.com/" rel="noopener">
+        <span class="cards__title">TestFlight</span>
+        <span class="cards__desc">Test builds for iPhone, by invitation</span>
+      </a>
+    </li>
+    <li>
+      <a href="https://play.google.com/store/apps/details?id=com.shortandpetit.bevoland.dev" rel="noopener">
+        <span class="cards__title">Google Play</span>
+        <span class="cards__desc">Bevoland Dev, for internal testers</span>
+      </a>
+    </li>
+  </ul>
+
+  <p>Already have the game? Open this link on your phone and it goes straight
+  to the game.</p>
+
+</main>
+
+<footer>
+  <nav>
+    <a href="/bevoland/">Bevoland</a>
+    <a href="/bevoland/privacy/">Privacy Policy</a>
+    <a href="/bevoland/terms/">Terms &amp; Conditions</a>
+  </nav>
+  <p>© 2026 Short &amp; Petit. All rights reserved.</p>
+</footer>
+
+<script>
+  // the inviting player's nickname, from the link (read here only; nothing is sent anywhere)
+  (function () {
+    var name = new URLSearchParams(window.location.search).get("n");
+    if (!name) return;
+    name = name.trim().slice(0, 50);
+    if (!name) return;
+    document.getElementById("who").textContent = name + " invited you to Bevoland Dev";
+    document.title = name + " invited you to Bevoland Dev";
+  })();
+</script>
+
+</body>
+</html>

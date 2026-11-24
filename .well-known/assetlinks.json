@@ -1,0 +1,28 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.shortandpetit.bevoland",
+      "sha256_cert_fingerprints": [
+        "A9:04:53:C5:80:D7:6A:75:D6:09:5D:18:91:2B:75:FA:93:9F:80:36:CB:C9:E6:F1:49:CE:1F:9D:37:EF:9A:F2",
+        "EE:C8:BC:91:7D:F5:55:AE:29:FB:09:04:84:DC:E5:E8:EB:1E:B6:D3:0E:66:82:15:48:36:DE:FC:F5:FE:37:7A"
+      ]
+    }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.shortandpetit.bevoland.dev",
+      "sha256_cert_fingerprints": [
+        "25:42:84:BA:AB:BD:71:C9:EA:62:C7:97:E9:15:09:EF:D1:2A:4B:FA:85:88:61:54:8D:F8:D4:84:89:37:19:93",
+        "EE:C8:BC:91:7D:F5:55:AE:29:FB:09:04:84:DC:E5:E8:EB:1E:B6:D3:0E:66:82:15:48:36:DE:FC:F5:FE:37:7A"
+      ]
+    }
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["39U72FWN96.com.shortandpetit.bevoland"],
+        "components": [{ "/": "/bevoland/friend/*", "comment": "Bevoland friend invitations" }]
+      },
+      {
+        "appIDs": ["39U72FWN96.com.shortandpetit.bevoland.dev"],
+        "components": [{ "/": "/bevoland/dev/friend/*", "comment": "Bevoland Dev friend invitations" }]
+      }
+    ]
+  }
+}
